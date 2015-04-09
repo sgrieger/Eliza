@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Eliza</title>
+    
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+    <style>
+    
+        .Conversation { overflow: auto; height: 240px; }
+    
+    </style>
+
+</head>
+<body>
+    <div data-role="page" id="page1">
+        <div data-theme="b" data-role="header" data-position="fixed">
+            <h3>
+                Eliza
+            </h3>
+        </div>
+        <div data-role="content">
+            <ul class="Conversation" data-role="listview" data-divider-theme="b" data-inset="false" style="overflow: auto; height: 240px;">
+                <li data-role="list-divider" role="heading">Hello, I'm Eliza. What is your problem?</li>
+            </ul>
+
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup">
+                    <label for="textinput2">
+                    </label>
+                    <input id="textinput2" placeholder="Type here" value="" type="text" />
+                </fieldset>
+            </div>
+            <input data-theme="b" value="Submit" type="submit" class="SubmitButton" />
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
